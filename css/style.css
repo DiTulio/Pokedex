@@ -47,6 +47,54 @@ main {
     text-transform: capitalize;
 }
 
+.pokemon__description {
+    display: none;
+    position: absolute;
+    top: 22%;
+    left: 24%;
+    width: 47%;
+    height: 30%;
+    overflow-y: auto;
+    font-size: clamp(7px, 2.6vw, 13px);
+    font-weight: 500;
+    line-height: 1.4;
+    color: #3a444d;
+    text-align: left;
+}
+
+.pokemon__description.active {
+    display: block;
+}
+
+.pokemon__image.hidden {
+    display: none;
+}
+
+.btn-info {
+    position: absolute;
+    top: 42%;
+    left: 3%;
+    width: 8%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #444;
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    font-size: clamp(8px, 3vw, 14px);
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    cursor: pointer;
+}
+
+.btn-info:active {
+    box-shadow: inset -3px 3px 0 #222;
+}
+
+.btn-info.active {
+    background-color: #6ab7f5;
+}
+
 .form {
     position: absolute;
     width: 65%;
